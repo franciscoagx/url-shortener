@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cyan: #2acfcf;
+  --color-dark-violet: #3b3054;
+  --color-red: #f46262;
+  --color-gray: #bfbfbf;
+  --color-grayish-violet: #9e9aa7;
+  --color-very-dark-blue: #35323e;
+  --color-very-dark-violet: #232127;
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+  --container-mobile: 375px;
+  --container-desktop: 1440px;
+}
+
+body {
+  @apply text-very-dark-blue;
+}
+
+h1 {
+  @apply font-bold text-5xl md:text-[86px] md:leading-24 mb-2 ;
+}
+
+h2 {
+  @apply font-bold text-4xl mb-6;
+}
+
+h3 {
+  @apply text-xl font-bold mb-2;
+}
+
+button {
+  @apply text-white bg-cyan px-8 py-3 font-semibold tracking-wide cursor-pointer;
+}
+
+a {
+  @apply transition-colors hover:text-cyan;
+}
+
+.bg-shorten {
+  @media screen and (min-width: 1440px) {
+    @apply bg-no-repeat bg-top bg-cover;
+    background-image: url('/images/bg-shorten-desktop.svg');
+  }
+  @media screen and (max-width: 1439px) {
+    @apply bg-no-repeat bg-right bg-auto;
+    background-image: url('/images/bg-shorten-mobile.svg');
+  }
+}
+
+.bg-boost {
+  @apply bg-no-repeat bg-center bg-cover;
+  @media screen and (min-width: 1440px) {
+    background-image: url('/images/bg-boost-desktop.svg');
+  }
+  @media screen and (max-width: 1439px) {
+    background-image: url('/images/bg-boost-mobile.svg');
+  }
+}
