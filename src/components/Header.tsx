@@ -6,7 +6,9 @@ export const Header = () => {
   return (
     <header className="max-w-desktop mx-auto py-6 md:py-12 flex justify-between text-grayish-violet px-10">
       <div className="grid  grid-flow-col gap-10 items-center">
-        <Image src={Logo} alt="Logo" />
+        <Link href={'/'}>
+          <Image src={Logo} alt="Logo" />
+        </Link>
         <div className=" gap-6 hidden md:flex">
           <Link href="/">Features</Link>
           <Link href="/">Princing</Link>

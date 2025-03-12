@@ -1,20 +1,13 @@
 import IconRecognition from '@/../public/images/icon-brand-recognition.svg';
 import IconRecords from '@/../public/images/icon-detailed-records.svg';
 import IconCustomizable from '@/../public/images/icon-fully-customizable.svg';
-import { LinkCard } from '@/components/LinkCard';
+import { LinkList } from '@/components/LinkList';
 import { StaticsCard } from '@/components/StaticsCard';
 
 export const StaticsSection = () => {
   return (
     <section className="bg-[#F0F1F6] pt-16 z-10">
-      <div className="py-4 text-center max-w-desktop mx-auto grid gap-4 px-10">
-        <LinkCard url="https://www.linkedin.com/in/franciscoagx/" shortUrl="https://link.franciscoagx.dev/in" />
-        <LinkCard url="https://www.youtube.com/watch?v=jfKfPfyJRdk" shortUrl="https://link.franciscoagx.dev/lofi" />
-        <LinkCard
-          url="https://www.udemy.com/course/vscode-mejora-tu-velocidad-para-codificar/"
-          shortUrl="https://link.franciscoagx.dev/vscode"
-        />
-      </div>
+      <LinkList />
       <div className="py-24 text-center max-w-desktop mx-auto px-10">
         <div className="text-center mb-20">
           <h2>Advanced Statistics</h2>
